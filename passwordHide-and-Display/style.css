@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form input {
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+  margin-top: 1vw;
+}
+body form .ri-eye-lin {
+  font-size: 2vw;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  color: rebeccapurple;
+  background-color: red;
+}
+.passClose {
+  position: absolute;
+  top: 72%;
+  left: 85%;
+  z-index: 99999;
+  font-size: 1.5vw;
+  transition: all ease 0.3s
+}
+.passSeen {
+  display: none;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 68%;
+  left: 85%;
+  z-index: 99999;
+  transition: all ease 0.3s
+}
