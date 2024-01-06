@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/aebaa313fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="h-screen w-screen bg-gray-600 relative" id="main">
+        <div class="input flex items-center justify-center gap-5 flex-col  absolute h-1/2 w-2/5 border-black border-1 shadow-black bg-gray-300 top-1/2 left-1/2 "
+            style="transform: translate(-50%,-50%);">
+            <input onclick="ShowToast(successMsg)" class="bg-gray-800 text-white py-3 w-2/6 text-lg cursor-pointer" type="button" value="Submit">
+            <input onclick="ShowToast(errorMsg)" class="bg-gray-800 text-white py-3 w-2/6 text-lg cursor-pointer" type="button" value="Error">
+            <input onclick="ShowToast(warningMsg)" class="bg-gray-800 text-white py-3 w-2/6 text-lg cursor-pointer" type="button" value="Warning">
+        </div>
+        <div class="overflow-hidden toastBox absolute bottom-5 right-5 "></div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

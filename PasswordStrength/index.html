@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+
+<body>
+    <div class="w-screen h-screen flex items-center justify-center text-left bg-gray-900 text-black" id="main">
+        <form class="flex items-center justify-center flex-col h-1/2 w-1/5 bg-gray-500 rounded-md">
+            <label class="text-xl font-semibold" for="username">username</label>
+            <input class=" my-1 py-2 px-2 w-2/3 text-black" type="text" name="username" id="username">
+            <label class="text-xl font-semibold" for="password">password</label>
+            <input class="my-1 py-2 px-2 w-2/3 text-black" type="password" name="password" id="password">
+            <h3 class="hidden text-yellow-400" id="passInfo">Password is <span id="status"></span></h3>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

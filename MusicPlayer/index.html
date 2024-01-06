@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="player">
+
+        <div class="header">
+            Music <span>Player</span>
+        </div>
+
+        <div class="img">
+            <img src="" id="thumb">
+        </div>
+        <div class="details">
+            <h3 id="title"></h3>
+            <p id="musician"></p>
+        </div>
+        <audio controls id="song">
+            <source src="./Pyaar Ke Saleeqe(PagalWorld.com.se).mp3" type="audio/mp3">
+            </source>
+        </audio>
+        
+        <div style="width: 100%; text-align: center;" class="songDetails">
+            <h1>Despavitpo</h1>
+            <h3>harshveer singh</h3>
+        </div>
+        <div style="color: black;"class="time">
+            <span  id="start">00</span>
+            <span id="end">00</span>
+        </div>
+        <input type="range" id="progress" value="0">
+
+        <div class="action">
+
+            <button >
+                <i class="bx bx-skip-previous"></i>
+            </button>
+
+            <button onclick="PlayPause()" class="play" id="play">
+                <i class="bx bx-play"></i>
+            </button>
+
+            <button >
+                <i class="bx bx-skip-next"></i>
+            </button>
+
+        </div>
+    <script src="script.js"></script>    
+</body>
+
+</html>
