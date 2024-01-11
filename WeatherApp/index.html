@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/aebaa313fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="h-screen w-screen md:h-screen " id="main">
+        <div class="card max-h-1/2 text-center sm:w-20 md:w-1/4 lg:w-1/3 xl:w-1/4">
+            <div class="search">
+                <input type="text" id="searchBox" spellcheck="false" placeholder="Enter city name">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="error mt-3 hidden">
+                <p class="text-2xl ">Invalid City Name</p>
+            </div>
+            <div class="weatherDetails hidden">
+                <img src="./rain.png" class="weatherIcon w-36  mt-10 ml-20">
+                <h1 class="temperature text-8xl font-bold mt-8 ">&degc</h1>
+                <h3 class="cityName text-2xl">Bhopal</h3>
+                <div class="details flex w-full items-center justify-between mt-7 px-5">
+                    <div class="col">
+                        <i class="fa-solid fa-water text-2xl font-light"></i>
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <p class="wind">15 Km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

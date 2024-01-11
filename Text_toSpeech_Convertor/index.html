@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/aebaa313fa.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <div class=" relative h-screen flex items-center justify-center flex-col w-screen text-white" id="main">
+        <h1 class="text-5xl font-bold">Text To Speech <span class=" spanInside">Convertor</span></h1>
+        <textarea spellcheck="false" class="textArea mt-6 h-1/2 w-1/3 p-2 rounded-md" placeholder="Write Anything Here"></textarea>
+        <div class="w-1/3 mt-6 row">
+            <select class="w-2/3 h-10 rounded-full selectButton"></select>
+            <button class="mx-4 text-white rounded-full bg-red-600 py-2 px-6 cursor-pointer font-bold text-lg"><i class="fa-solid fa-volume-high m-1"></i> Listen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
